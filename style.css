@@ -1,0 +1,596 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  
+@font-face {
+    font-family: Chillax;
+    src: url('font/Chillax-Medium.otf') ; 
+}
+
+@font-face {
+    font-family: AvenirLTStd;
+    src: url('font/AvenirLTStd-Book.woff') ; 
+}
+@font-face {
+    font-family: AvenirLTStd-Roman;
+    src: url('font/AvenirLTStd-Roman.woff') ; 
+}
+
+body,html{
+    width: 100%;
+    height: auto;
+   
+}
+
+#main{
+    padding-top: 50px;
+    width: 100%;
+    background-color: #fef8f2;
+    overflow: hidden;
+}
+
+#nav-conatiner{
+    height: 10vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    position: sticky;
+    z-index: 15;
+    justify-self: center;
+    
+}
+
+#logo-container h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#nav-elem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:30px;
+    
+}
+#nav-elem a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #434343; 
+    font-family:AvenirLTStd-Roman;
+
+}
+
+#nav-elem button{
+    width: 100px;
+    height:40px;
+    border-radius: 20px;
+    padding-bottom: 5px;
+    background-color: #2c4f58;
+    color: white;
+    font-size: 15px;
+}
+
+#nav-elem h4{
+    border-left: 2px solid #000000;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.menu-btn{
+display: none;
+}
+
+.nav-mobile{
+    width: 100%;
+    height: 90vh;
+    background-color: #fef0eb;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    transition: all linear 2s;
+
+}
+.nav-mobile #nav-elem{
+    width: 100%;
+    padding: 30px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-mobile #nav-elem a{
+  color: #233143;
+    font-size: 20px;
+}
+
+#hero-section{
+    height: 80vh;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px; 
+    padding-left: 6vw;
+    padding-right: 6vw;
+    font-family:AvenirLTStd-Roman;
+    /* font-family: 'Luckiest Guy', cursive;
+font-family: 'Miltonian Tattoo', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Ysabeau Infant', sans-serif; */
+}
+
+#text-content{
+    display: flex;
+    flex-direction: column;
+
+}
+#text-content h1{
+   font-size: 4vw;
+   font-weight: 300;
+   font-family: Chillax;
+
+}
+
+#text-content p{
+    font-size: 22px;
+    word-spacing: 2.3px;
+   font-weight: 200;
+   margin: 50px 0;
+}
+
+#motion{
+    position: relative;
+    display: block;
+}
+
+.special-heading{
+    display: flex;
+    position: relative;
+    width: 100%;
+    gap:15px;
+}
+
+.special-text-cont{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 400px;
+margin-top: 5px;
+margin-bottom: 5px;
+    overflow-y: hidden;
+    text-align: center;
+   
+}
+
+.special-text-cont h1{
+    position: absolute;
+    color: #ff6f6b;
+}
+.special-text-cont #secnd-special-heading,#thired-special-heading{
+    display: none;
+}
+
+#btn-sec{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#btn-sec button{
+    height: 50px;
+    width: 180px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #87ddc1;
+}
+
+#btn-sec button:hover{
+   color: white;
+    background-color: #233143;
+    transition: all ease-in-out 0.6s;
+}
+
+#btn-sec button .bi-arrow-right-circle-fill{
+color: white;
+}
+
+#btn-sec h3{
+    font-weight: 200;
+}
+
+#img-content{
+    display: flex;
+   flex-direction: column;
+   margin-bottom: 10%;
+   
+}
+#img-content img:nth-child(1){
+scale: 0.5;
+left: 70px;
+top: 70px;
+position: relative;
+}
+
+.blur{
+    position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #ff6f6b;
+   margin-top: 200px;
+   width: 300px;
+   height: 300px;
+   filter: blur(200px);
+   z-index: -1;
+}
+
+.arrow{
+    display: flex;
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+}
+
+#second-section{
+  
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#image-content{
+    position: relative;
+    /* overflow: hidden; */
+}
+#image-content img{
+    border-radius: 50%;
+}
+
+#image-content img:nth-child(1){
+   position: absolute;
+   bottom:-100px;
+   left: -150px;
+}
+
+#image-content img:nth-child(2){
+    position: absolute;
+    top:60px;
+    left: 30vw;
+    
+ }
+
+ #image-content .img3{
+ scale: 0.8;
+position: absolute; 
+bottom: 0;
+left: 78vw;
+ }
+
+.homeAdventure-text{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 80px;
+   
+}
+
+.split-word{
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    font-family:AvenirLTStd;
+    font-size: 27px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 5px;
+     
+}
+
+.split-char{
+    position: relative;
+    display: inline-block;
+    opacity: 0.4;
+}
+
+#thired-section{
+    /* height: 150vh; */
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #233143;
+    font-family:AvenirLTStd-Roman;
+    flex-direction: column;
+    position: relative;
+}
+
+#thired-section h1{
+    position: relative;
+    color: #87ddc1;
+    font-size: 2.5vw;
+    top: 5vh;
+    margin-bottom: 2vh;
+}
+
+.content-row{
+    display: flex;
+    position: relative;
+   align-items: center;
+    width: 60%;
+    margin-top: 6vh;
+    
+}
+
+.contenr-col1,.contenr-col2{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+}
+
+.card1,.card2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+    background-color: white;
+    color: #2c4f58 ;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px 0 20px 0;
+}
+
+.card1 p,.card2 p{
+    padding-top: 30px;
+}
+#thired-section #btn-sec h3{
+    color: #fff;
+}
+
+#thired-section #btn-sec{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+#thired-section #btn-sec h3:hover{
+    color: #87ddc1;
+     transition: all ease-in-out 0.6s;
+ }
+
+ .arrow2{
+    position: relative;
+    top: 0;
+ }
+
+ #fourth-section{
+    height: 50vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+   justify-content: space-between;
+    background-color: #87ddc1;
+    font-family:AvenirLTStd-Roman;
+    position: relative;
+    
+ }
+
+ #fourth-section img{
+    border-radius: 50%;
+  position: relative;
+  left: -4%;
+  bottom: -6%;
+  scale: 1.2;
+  width: 40%;
+ }
+ 
+ #fourth-section .contenr-col1{
+    width:60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    padding: 0 3vw 0 3vw;
+ }
+
+ #fourth-section .contenr-col1 p{
+font-size: 20px;
+margin-top: 20px;
+ }
+
+ #fifth-section{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: #fef0eb;
+    font-family:AvenirLTStd-Roman;
+    position: relative; 
+    flex-direction: column;
+    padding: 10vh 0;
+ }
+
+ #fifth-section .heading{
+   color: #ff6f6b;
+ }
+
+ #fifth-section .content-row{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #fifth-section .content{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 5vh 0;
+    color: #2c4f58;
+ }
+
+ #fifth-section .content img{
+    width:35vw;
+
+ }
+ #fifth-section .content .text-content{
+    width:35vw;
+
+ }
+ #fifth-section .content .text-content p{
+padding: 15px 0;
+opacity: 0.9;
+font-size: 16px;
+ }
+
+ #fifth-section .content .text-content h1{
+   font-size: 22px;
+     }
+
+
+ @media only screen and (max-width: 768px) {
+
+    /* nav-conatiner */
+    .menu-btn{
+        display: block;
+    }
+    #nav-elem{
+        display: none;
+    }
+    .nav-mobile{
+        display: none;
+    }
+
+  
+
+    /* hero-section */
+    #img-content{
+        display: none;
+    }
+    #text-content #btn-sec{
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+    #text-content h1{
+        font-size: 30px;
+    }
+    .arrow{
+        bottom: 16vh; 
+    }
+
+
+    /* second-section */
+    
+    #image-content img:nth-child(2){
+        display: none;        
+     }
+     
+     #image-content img:nth-child(3){
+        display: none;
+      }
+
+      .homeAdventure-text{
+        width: 100%;
+       height: 50vh;
+        text-align: center;
+       
+    }
+      .split-word{
+        font-size: 16px;
+        font-weight: 700;  
+        padding: 0 5px 0 5px; 
+
+    }
+
+    /* thired-section */
+
+    .content-row{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #thired-section h1{
+       font-size: 20px;
+       text-align: center;
+    }
+
+    /* fourth-section */
+
+    #fourth-section img{
+        display: none;
+     }
+  
+    #fourth-section .contenr-col1 p{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    #fourth-section .contenr-col1 h1{
+        font-size: 20PX;
+    }
+    #fourth-section .contenr-col1{
+        width:100%;
+        display: flex;
+     }
+
+    /* fifth section */
+
+    #fifth-section .content{
+        flex-direction: column;
+     }
+     #fifth-section .content:nth-child(2){
+        flex-direction: column-reverse;
+     }
+
+     #fifth-section .content img{
+        width:80vw;
+     }
+
+     #fifth-section .content .text-content{
+        width:80vw;
+     }
+   
+    
+ }
+
+ @media only screen and (max-width: 543px) {
+     /* nav-conatiner */
+     .menu-btn{
+        display: block;
+    }
+    #nav-elem{
+        display: none;
+    }
+   
+     /* hero-section */
+    .arrow{
+        bottom: 60px; 
+        right: 0;
+    } 
+    #text-content{
+        width: 100%;
+    }
+    #text-content p{
+        font-size: 18px;
+        padding: 5px;
+
+       
+    }
+ }
